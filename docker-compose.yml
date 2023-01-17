@@ -1,0 +1,8 @@
+version: "3"
+services:
+  webservice:
+    image: "tomcat:9"
+    ports: 
+     - "8081:8080"
+    volumes: 
+     - "/home/ec2-user/game-of-life/gameoflife-web/target:/usr/local/tomcat/webapps"
